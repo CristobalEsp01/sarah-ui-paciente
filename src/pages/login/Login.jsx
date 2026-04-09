@@ -35,7 +35,7 @@ export default function Login() {
       localStorage.setItem('sarah_auth_status', 'authenticated')
       localStorage.setItem('sarah_user_email', email)
       localStorage.setItem('sarah_auth_timestamp', new Date().toISOString())
-      window.location.assign('/home')
+      window.location.assign('/consent')
     } finally {
       setLoading(false)
     }
